@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/fei/eval/pyrouge/Rouge155.py=utf-8
+encoding//src/fei/model/amr_graph.py=utf-8
+encoding//src/fei/model/corpus.py=utf-8
+encoding//src/fei/model/run_summarizer.py=utf-8
+encoding//src/fei/preprocess/stats_coverage.py=utf-8
+encoding//src/fei/preprocess/stats_jamr.py=utf-8
+encoding//src/fei/preprocess/stats_jamr_gold.py=utf-8
+encoding//src/fei/preprocess/stats_jamr_new.py=utf-8
+encoding//src/fei/preprocess/triple.py=utf-8
+encoding//src/naive/summ.py=UTF-8
+encoding/<project>=UTF-8
