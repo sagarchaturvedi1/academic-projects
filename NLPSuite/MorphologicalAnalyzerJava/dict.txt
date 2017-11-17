@@ -1,0 +1,20 @@
+believe verb
+arm verb
+arm noun
+run verb
+run noun
+ran verb ROOT run 
+store noun
+store verb
+consider verb
+happy adjective
+produce verb
+produce noun
+form noun
+form verb
+read verb  
+vigil noun
+token noun
+token verb
+friend noun
+friend verb

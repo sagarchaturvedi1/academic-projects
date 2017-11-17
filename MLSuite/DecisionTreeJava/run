@@ -1,0 +1,58 @@
+javac *.java
+
+echo "\n"
+echo "------ Starting Setting A : Part 1 ------"
+echo "\n"
+echo "(b & d) - Predict Error on training data"
+java MainClass predict "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\training.data"
+echo "\n"
+echo "(c & d) - Error on test data"
+java MainClass predict "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\test.data"
+echo "\n"
+
+echo "------ Starting Setting A : Part 2 ------"
+echo "\n"
+echo "(a) - Cross Validation with Depth"
+java MainClass evaluate-depth "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\CVSplits"
+echo "\n"
+echo "(b) - Predict Error on test data with Best Depth"
+java MainClass predict-depth "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\test.data" 2
+echo "\n"
+
+echo "\n"
+echo "------ Starting Setting B : Part 1 ------"
+echo "\n"
+echo "(a,e) - Predict Error on training data"
+java MainClass predict "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\training.data"
+echo "\n"
+echo "(b,e) - Error on test data"
+java MainClass predict "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\test.data"
+echo "\n"
+echo "(c,e) - Error on Setting A training data"
+java MainClass predict "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\training.data"
+echo "\n"
+echo "(d,e) - Error on Setting A test data"
+java MainClass predict "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingA\test.data"
+echo "\n"
+
+echo "------ Starting Setting B : Part 2 ------"
+echo "\n"
+echo "(a) - Cross Validation with Depth"
+java MainClass evaluate-depth "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\CVSplits"
+echo "\n"
+echo "(b) - Predict Error on test data with Best Depth"
+java MainClass predict-depth "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingB\test.data" 1
+echo "\n"
+
+echo "------ Starting Setting B : Part 2 ------"
+echo "\n"
+echo "(b) - Cross Validation with Missing value Treatment"
+java MainClass evaluate-missing "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingC\CVSplits"
+echo "\n"
+echo "(c) - Predict Error on test data with Best Missing value treatment"
+java MainClass predict-missing "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingC\training.data" "C:\Users\sagar\Dropbox\ML assignments\datasets\SettingC\test.data" 1
+echo "\n"
+
+
+
+
